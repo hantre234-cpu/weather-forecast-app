@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nimbus | Professional Weather Forecast</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+  <div class="header">
+    <div class="logo-area">
+      <i class="fas fa-cloud-sun"></i>
+      <h1>Nimbus Forecast</h1>
+    </div>
+    <div class="actions">
+      <button id="refreshBtn" class="icon-btn" title="Refresh weather"><i class="fas fa-sync-alt"></i></button>
+      <button id="unitToggleBtn" class="icon-btn" title="°C/°F"><i class="fas fa-temperature-high"></i></button>
+      <button id="darkModeBtn" class="icon-btn" title="Dark/Light"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
+
+  <div class="search-section">
+    <div class="search-wrapper">
+      <input type="text" id="cityInput" class="search-input" placeholder="Search city, e.g., Paris, Tokyo, New York" autocomplete="off">
+      <button id="searchBtn" class="btn-primary"><i class="fas fa-search"></i> Search</button>
+      <div class="history-dropdown">
+        <button id="historyBtn" class="btn-primary history-btn"><i class="fas fa-clock"></i> Recent</button>
+        <ul id="historyList" class="history-list"></ul>
+      </div>
+    </div>
+    <button style="padding: 15px;" id="geolocationBtn" class="btn-primary "><i class="fas fa-location-dot"></i> My Location</button>
+  </div>
+
+  <div id="errorContainer" class="error-msg hidden"></div>
+
+  <!-- Weather Card -->
+  <div id="weatherCard" class="weather-card">
+    <div class="current-weather">
+      <div class="temp-section">
+        <i id="mainWeatherIcon" class="fas fa-cloud-sun weather-icon"></i>
+        <div>
+          <span id="currentTemp" class="temp">--</span>
+          <span id="tempUnit" class="unit-temp">°C</span>
+          <div id="conditionText" style="color:#FFE6B0; font-weight:500;">--</div>
+        </div>
+      </div>
+      <div>
+        <h2 id="cityName" style="color:white; font-size:2rem;">--</h2>
+        <p id="feelsLike" style="color:#ddd;">Feels like: --</p>
+      </div>
+    </div>
+    <div class="details-grid">
+      <div class="detail-item"><div class="detail-label">Humidity</div><div class="detail-value" id="humidity">--%</div></div>
+      <div class="detail-item"><div class="detail-label">Wind Speed</div><div class="detail-value" id="windSpeed">-- km/h</div></div>
+      <div class="detail-item"><div class="detail-label">Pressure</div><div class="detail-value" id="pressure">-- hPa</div></div>
+    </div>
+  </div>
+
+  <div class="forecast-title"><i class="fas fa-calendar-week"></i> 5-Day Forecast</div>
+  <div id="forecastContainer" class="forecast-container"></div>
+  <footer>Powered by Open-Meteo | Real-time weather</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
