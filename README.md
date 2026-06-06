@@ -79,13 +79,13 @@ You can run this project locally in 3 simple steps:
 
 📁 Project Structure
 
-nimbus-forecast/
-│
-├── index.html          # Main HTML structure
-├── style.css           # All styles (embedded in <style> for simplicity, but can be separate)
-├── script.js           # All JavaScript code (ES6+)
-├── README.md           # Project documentation
-└── assets/             # (Optional) folder for screenshots or custom icons
+nimbus-forecast/<br>
+│<br>
+├── index.html          # Main HTML structure<br>
+├── style.css           # All styles (embedded in <style> for simplicity, but can be separate)<br>
+├── script.js           # All JavaScript code (ES6+)<br>
+├── README.md           # Project documentation<br>
+└── assets/             # (Optional) folder for screenshots or custom icons<br>
 Note: The code provided in the final answer includes CSS and JS inside the same HTML file for convenience. For a cleaner portfolio project, you can split them into separate files as shown above.
 
 ---
