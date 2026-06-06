@@ -64,3 +64,40 @@ You can run this project locally in 3 simple steps:
    ```bash
    git clone https://github.com/yourusername/nimbus-forecast.git
    cd nimbus-forecast
+---
+2. Open the project
+   · Just open index.html in your favourite browser (Chrome, Firefox, Edge, etc.)
+   · No build steps, no dependencies – it works out of the box.
+3. Start using the app
+   · Type a city name (e.g., "Paris", "Tokyo") and click Search.
+   · Click 📍 My Location to get weather for your current location.
+   · Toggle between °C/°F using the thermometer button.
+   · Switch dark/light mode with the moon/sun button.
+   · View your recent searches in the Recent dropdown.
+
+---
+
+📁 Project Structure
+
+nimbus-forecast/
+│
+├── index.html          # Main HTML structure
+├── style.css           # All styles (embedded in <style> for simplicity, but can be separate)
+├── script.js           # All JavaScript code (ES6+)
+├── README.md           # Project documentation
+└── assets/             # (Optional) folder for screenshots or custom icons
+Note: The code provided in the final answer includes CSS and JS inside the same HTML file for convenience. For a cleaner portfolio project, you can split them into separate files as shown above.
+
+---
+
+🌐 API Reference
+
+This project uses two free endpoints from Open‑Meteo – no API key required.
+
+Endpoint Description
+https://geocoding-api.open-meteo.com/v1/search Converts city name to geographic coordinates (latitude/longitude).
+https://api.open-meteo.com/v1/forecast Returns current weather + 5‑day forecast (temperature, humidity, wind, pressure, weather codes, sunrise/sunset).
+
+Example request:
+
+https://api.open-meteo.com/v1/forecast?latitude=48.8566&longitude=2.3522&current=temperature_2m,relative_humidity_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto
