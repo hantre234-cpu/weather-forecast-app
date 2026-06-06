@@ -36,16 +36,16 @@ A modern, fully responsive weather forecast web application that provides real-t
 
 ## 🛠️ Technologies Used
 
-| Technology       | Purpose                                      |
-|------------------|----------------------------------------------|
-| HTML5            | Semantic structure                          |
-| CSS3             | Glassmorphism design, animations, responsive layout |
-| JavaScript (ES6+) | All logic, DOM manipulation, async operations |
-| Fetch API        | HTTP requests to weather APIs                |
-| Open‑Meteo API   | Free weather & geocoding data (no API key required) |
-| Local Storage    | Persist search history                       |
-| Geolocation API  | Get user's current position                  |
-| Font Awesome 6   | Weather and UI icons                         |
+| Technology       | Purpose                                      |<br>
+|------------------|----------------------------------------------|<br>
+| HTML5<span></span>            | Semantic structure                          |<br>
+| CSS3             | Glassmorphism design, animations, responsive layout |<br>
+| JavaScript (ES6+)| All logic, DOM manipulation, async operations |<br>
+| Fetch API        | HTTP requests to weather APIs                |<br>
+| Open‑Meteo API   | Free weather & geocoding data (no API key required) |<br>
+| Local Storage    | Persist search history                       |<br>
+| Geolocation API  | Get user's current position                  |<br>
+| Font Awesome 6   | Weather and UI icons                         |<br>
 
 ---
 
